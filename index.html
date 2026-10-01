@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ក្រូចស្រុកយើង - ហាងផ្លែឈើស្រស់ធម្មជាតិ | ក្រូចតែជ្រក់ & ក្រូចថ្លុង</title>
+  <meta name="description" content="ក្រូចស្រុកយើង ហាងលក់ផ្លែឈើស្រស់ធម្មជាតិពីចម្ការ ក្រូចតែជ្រក់ និង ក្រូចថ្លុង ស្រស់ ឆ្ងាញ់ និងជ្រើសរើសដោយយកចិត្តទុកដាក់។ ទំនាក់ទំនង៖ 0963508320">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       1. HEADER / NAVBAR
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container navbar-inner">
+      <!-- Left: Logo & Brand -->
+      <a href="#home" class="brand-logo">
+        <div class="brand-icon-wrap">🍊</div>
+        <div class="brand-text-wrap">
+          <span class="brand-title">ក្រូចស្រុកយើង</span>
+          <span class="brand-subtitle">ក្រូចតែជ្រក់ & ក្រូចថ្លុង</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">ទំព័រដើម</a></li>
+          <li><a href="#products" class="nav-link">ផលិតផល</a></li>
+          <li><a href="#about" class="nav-link">អំពីយើង</a></li>
+          <li><a href="#order" class="nav-link">ទំនាក់ទំនង</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right: Action Buttons & Icons -->
+      <div class="nav-actions">
+        <!-- Search Button -->
+        <button class="icon-btn" title="ស្វែងរក" onclick="alert('ស្វែងរកផ្លែឈើស្រស់៖ ក្រូចតែជ្រក់ និង ក្រូចថ្លុង')">
+          🔍
+        </button>
+
+        <!-- Shopping Cart Icon with Badge -->
+        <button class="icon-btn" id="headerCartBtn" title="កន្ត្រកទំនិញ">
+          🛒
+          <span class="cart-badge" id="headerCartBadge">0</span>
+        </button>
+
+        <!-- User Profile Icon -->
+        <button class="icon-btn" title="គណនី">
+          👤
+        </button>
+
+        <!-- Quick Hotline -->
+        <a href="tel:0963508320" class="contact-quick-btn" title="ទូរស័ព្ទមកកាន់យើងខ្ញុំ">
+          <span>📞</span>
+          <span>096 350 8320</span>
+        </a>
+
+        <!-- Mobile Hamburger Button -->
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="បើកមីនុយ">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="mobile-nav-drawer" id="mobileDrawer">
+    <div>
+      <div class="drawer-header">
+        <div class="brand-logo">
+          <div class="brand-icon-wrap" style="width: 38px; height: 38px; font-size: 20px;">🍊</div>
+          <span class="brand-title" style="font-size: 22px;">ក្រូចស្រុកយើង</span>
+        </div>
+        <button class="drawer-close" id="drawerClose" aria-label="បិទមីនុយ">✕</button>
+      </div>
+      <ul class="mobile-links">
+        <li><a href="#home">ទំព័រដើម</a></li>
+        <li><a href="#products">ផលិតផល</a></li>
+        <li><a href="#why-us">ហេតុអ្វីជ្រើសរើសយើង</a></li>
+        <li><a href="#about">អំពីយើង</a></li>
+        <li><a href="#order">បញ្ជាទិញ</a></li>
+      </ul>
+    </div>
+    <div>
+      <a href="https://t.me/+855963508320" target="_blank" class="btn-telegram-order" style="margin-bottom: 10px;">
+        <span>✈️ Telegram: 0963508320</span>
+      </a>
+      <a href="tel:0963508320" class="btn-primary" style="width: 100%; justify-content: center;">
+        <span>📞 ទូរស័ព្ទ: 096 350 8320</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       2. HERO SECTION
+       ========================================================================== -->
+  <section class="hero-section" id="home">
+    <div class="container">
+      <div class="hero-card">
+        <!-- Natural Background Image with Blue Sky and Citrus Tree -->
+        <img src="images/farm.jpg" alt="ចម្ការក្រូចធម្មជាតិ" class="hero-bg-img">
+        <div class="hero-overlay"></div>
+
+        <!-- Hero Content -->
+        <div class="hero-content">
+          <div class="hero-tag">
+            <span>🌿</span> ធម្មជាតិពិតៗ គ្មានជាតិគីមី
+          </div>
+          <h1 class="hero-title">ក្រូចស្រស់ពីចម្ការ 🍊</h1>
+          <p class="hero-subtitle">
+            ស្រស់ ឆ្ងាញ់ និងជ្រើសរើសដោយយកចិត្តទុកដាក់
+          </p>
+          <div class="hero-btns">
+            <a href="#products" class="btn-primary">
+              <span>🛒</span>
+              <span>ទិញឥឡូវនេះ</span>
+            </a>
+            <a href="#products" class="btn-secondary">
+              <span>មើលផលិតផល</span>
+              <span>↓</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Carousel Dots -->
+        <div class="hero-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       3. PRODUCT SECTION & SHOPPING CART
+       ========================================================================== -->
+  <section class="main-store-section" id="products">
+    <div class="container">
+      <!-- Section Title Header -->
+      <div class="section-header-wrap">
+        <span class="section-badge">🍊 ផ្លែឈើធម្មជាតិប្រចាំហាង</span>
+        <h2 class="section-title">🍊 ផលិតផលស្រស់របស់យើង</h2>
+        <p class="section-desc">បេះស្រស់ៗផ្ទាល់ពីដើម រសជាតិផ្អែមធម្មជាតិ ធានាគុណភាពលេខ១</p>
+      </div>
+
+      <!-- Main Store Layout (Products Grid + Cart Side Panel) -->
+      <div class="store-layout">
+        <!-- TWO LARGE PRODUCT CARDS -->
+        <div class="products-grid">
+          
+          <!-- PRODUCT 1: ក្រូចតែជ្រក់ -->
+          <article class="product-card" id="card-orange">
+            <div class="product-img-wrap">
+              <img src="images/orange.jpg" alt="ក្រូចតែជ្រក់" class="product-img">
+              <span class="product-status-tag">🌿 បេះថ្មីៗពីដើម</span>
+              <span class="product-price-badge" id="price-orange">4,000 ៛ / 1kg</span>
+            </div>
+            <div class="product-content">
+              <div class="product-title-row">
+                <h3 class="product-name">ក្រូចតែជ្រក់</h3>
+                <span style="font-size: 22px;">🍊</span>
+              </div>
+              <p class="product-description">ក្រូចស្រស់ពីចម្ការ រសជាតិផ្អែមស្រទន់ ទឹកច្រើន និងសម្បូរវីតាមីនសេខ្ពស់។</p>
+
+              <!-- Weight Options -->
+              <div class="weight-selector-label">ជម្រើសទម្ងន់:</div>
+              <div class="weight-chips" id="weights-orange">
+                <button type="button" class="weight-chip active" data-weight="1">1kg</button>
+                <button type="button" class="weight-chip" data-weight="2">2kg</button>
+                <button type="button" class="weight-chip" data-weight="5">5kg</button>
+              </div>
+
+              <!-- Quantity Controls & Add to Cart -->
+              <div class="product-action-row">
+                <div class="qty-control">
+                  <button type="button" class="qty-btn" id="minus-orange" aria-label="បន្ថយ">−</button>
+                  <input type="text" class="qty-input" id="qty-orange" value="1" readonly>
+                  <button type="button" class="qty-btn" id="plus-orange" aria-label="បន្ថែម">+</button>
+                </div>
+                <button type="button" class="btn-add-cart" id="add-orange">
+                  <span>🛒</span>
+                  <span>បន្ថែមទៅកន្ត្រក</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PRODUCT 2: ក្រូចថ្លុង -->
+          <article class="product-card" id="card-pomelo">
+            <div class="product-img-wrap">
+              <img src="4.jpg" alt="ក្រូចថ្លុង" class="product-img">
+              <span class="product-status-tag">🍈 ស្រស់ផ្អែមឆ្ងាញ់</span>
+              <span class="product-price-badge" id="price-pomelo">5,000 ៛ / 1ផ្លែ</span>
+            </div>
+            <div class="product-content">
+              <div class="product-title-row">
+                <h3 class="product-name">ក្រូចថ្លុង</h3>
+                <span style="font-size: 22px;">🍈</span>
+              </div>
+              <p class="product-description">ក្រូចថ្លុងស្រស់ រសជាតិឆ្ងាញ់ កំពឹសធំៗ ស្រួយផ្អែមឆ្ងាញ់បែបធម្មជាតិពិតៗ។</p>
+
+              <!-- Weight Options -->
+              <div class="weight-selector-label">ជម្រើសចំនួនផ្លែ:</div>
+              <div class="weight-chips" id="weights-pomelo">
+                <button type="button" class="weight-chip active" data-weight="1">1 ផ្លែ</button>
+                <button type="button" class="weight-chip" data-weight="2">2 ផ្លែ</button>
+                <button type="button" class="weight-chip" data-weight="5">5 ផ្លែ</button>
+              </div>
+
+              <!-- Quantity Controls & Add to Cart -->
+              <div class="product-action-row">
+                <div class="qty-control">
+                  <button type="button" class="qty-btn" id="minus-pomelo" aria-label="បន្ថយ">−</button>
+                  <input type="text" class="qty-input" id="qty-pomelo" value="1" readonly>
+                  <button type="button" class="qty-btn" id="plus-pomelo" aria-label="បន្ថែម">+</button>
+                </div>
+                <button type="button" class="btn-add-cart" id="add-pomelo">
+                  <span>🛒</span>
+                  <span>បន្ថែមទៅកន្ត្រក</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- 4. SHOPPING CART PANEL (RIGHT SIDE ON DESKTOP) -->
+        <aside class="cart-panel" id="cartPanel">
+          <div class="cart-header">
+            <div class="cart-header-title">🛒 កន្ត្រកទំនិញ</div>
+            <span class="cart-items-count" id="cartCountHeader">0 មុខ</span>
+          </div>
+
+          <!-- Dynamic Items List -->
+          <div class="cart-items-list" id="cartItemsList">
+            <!-- Rendered by app.js -->
+          </div>
+
+          <!-- Cart Bottom Total & Checkout Button -->
+          <div class="cart-footer">
+            <div class="cart-total-row">
+              <span class="cart-total-label">សរុប:</span>
+              <span class="cart-total-value" id="cartTotalValue">0 ៛</span>
+            </div>
+            <div class="cart-total-riel" id="cartTotalRiel">($0.00)</div>
+            <button type="button" class="btn-checkout-cart" id="btnCheckoutCart">
+              <span>🛒</span>
+              <span>បញ្ជាទិញ</span>
+            </button>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       5. WHY CHOOSE US (BENEFITS)
+       ========================================================================== -->
+  <section class="benefits-section" id="why-us">
+    <div class="container">
+      <div class="section-header-wrap" style="margin-bottom: 35px;">
+        <h2 class="section-title">🌿 ហេតុអ្វីជ្រើសរើសយើង?</h2>
+        <p class="section-desc">គុណភាព និងទំនុកចិត្តខ្ពស់បំផុតសម្រាប់សុខភាពគ្រួសារអ្នក</p>
+      </div>
+
+      <div class="benefits-grid">
+        <!-- Benefit 1 -->
+        <div class="benefit-card">
+          <div class="benefit-icon-circle">🍊</div>
+          <h3 class="benefit-title">ផ្លែឈើស្រស់</h3>
+          <p class="benefit-desc">ជ្រើសរើសដោយយកចិត្តទុកដាក់</p>
+        </div>
+
+        <!-- Benefit 2 -->
+        <div class="benefit-card">
+          <div class="benefit-icon-circle">🌱</div>
+          <h3 class="benefit-title">ពីចម្ការ</h3>
+          <p class="benefit-desc">ផ្លែឈើស្រស់មានប្រភពច្បាស់លាស់</p>
+        </div>
+
+        <!-- Benefit 3 -->
+        <div class="benefit-card">
+          <div class="benefit-icon-circle">📦</div>
+          <h3 class="benefit-title">វេចខ្ចប់យ៉ាងប្រុងប្រយ័ត្ន</h3>
+          <p class="benefit-desc">រក្សាគុណភាពមុនដឹកជញ្ជូន</p>
+        </div>
+
+        <!-- Benefit 4 -->
+        <div class="benefit-card">
+          <div class="benefit-icon-circle">🚚</div>
+          <h3 class="benefit-title">ដឹកជញ្ជូន</h3>
+          <p class="benefit-desc">ដឹកជញ្ជូនដល់អតិថិជន</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       6. FARM / ABOUT SECTION
+       ========================================================================== -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <!-- Left: Farm image with badge -->
+        <div class="about-img-box">
+          <div class="about-img-frame">
+            <img src="images/farm.jpg" alt="ដើមក្រូចស្រស់ពីចម្ការធម្មជាតិ" class="about-img">
+          </div>
+          <div class="about-floating-badge">
+            <span class="badge-icon">🌿</span>
+            <div>
+              <div class="badge-text-primary">ចម្ការធម្មជាតិ 100%</div>
+              <div class="badge-text-sub">បេះស្រស់ៗរាល់ថ្ងៃ</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Description -->
+        <div class="about-content">
+          <span class="about-tag">🌿 អំពីយើង</span>
+          <h2 class="about-title">ផ្លែឈើស្រស់ពីចម្ការ</h2>
+          <p class="about-desc">
+            យើងផ្តល់ជូនផ្លែឈើស្រស់ៗ
+            ដែលត្រូវបានជ្រើសរើសដោយយកចិត្តទុកដាក់
+            ដើម្បីផ្តល់ជូនអតិថិជននូវរសជាតិធម្មជាតិ
+            និងគុណភាពល្អ។
+          </p>
+
+          <ul class="about-features-list">
+            <li class="about-feature-item">
+              <span class="about-feature-check">✓</span>
+              <span>ដាំដុះតាមក្បួនធម្មជាតិ មិនប្រើថ្នាំគីមីប៉ះពាល់សុខភាព</span>
+            </li>
+            <li class="about-feature-item">
+              <span class="about-feature-check">✓</span>
+              <span>ផ្លែធំៗ ទឹកច្រើន កំពឹសពេញៗ រសជាតិផ្អែមឆ្ងាញ់</span>
+            </li>
+            <li class="about-feature-item">
+              <span class="about-feature-check">✓</span>
+              <span>វេចខ្ចប់ប្រកបដោយអនាម័យខ្ពស់ ដឹកជញ្ជូនរហ័សទាន់ចិត្ត</span>
+            </li>
+          </ul>
+
+          <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+            <a href="#order" class="btn-about">
+              <span>អំពីយើង →</span>
+            </a>
+            <a href="https://maps.app.goo.gl/CKua7u4Khgq8hTqt7" target="_blank" class="btn-about" style="background: #ffffff; color: var(--dark-green); border: 1.5px solid var(--dark-green);">
+              <span>📍 មើលទីតាំងចម្ការលើ Google Maps</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       7. ORDER FORM (CHECKOUT)
+       ========================================================================== -->
+  <section class="order-section" id="order">
+    <div class="container">
+      <div class="order-card-container">
+        <div class="section-header-wrap" style="margin-bottom: 20px;">
+          <span class="section-badge">📝 បញ្ជាទិញរហ័ស</span>
+          <h2 class="section-title">🛒 បញ្ជាទិញ</h2>
+          <p class="section-desc">សូមបំពេញព័ត៌មានខាងក្រោម យើងខ្ញុំនឹងទំនាក់ទំនងបញ្ជាក់ការដឹកជញ្ជូនភ្លាមៗ</p>
+        </div>
+
+        <form id="orderForm">
+          <div class="order-form-grid">
+            <!-- ឈ្មោះ * -->
+            <div class="form-group">
+              <label for="orderName" class="form-label">ឈ្មោះ <span>*</span></label>
+              <input type="text" id="orderName" class="form-input" placeholder="ឧ. សុខា ហេង" required>
+            </div>
+
+            <!-- លេខទូរស័ព្ទ * -->
+            <div class="form-group">
+              <label for="orderPhone" class="form-label">លេខទូរស័ព្ទ <span>*</span></label>
+              <input type="tel" id="orderPhone" class="form-input" placeholder="ឧ. 096 350 8320" required>
+            </div>
+
+            <!-- ផលិតផល * -->
+            <div class="form-group">
+              <label for="orderProduct" class="form-label">ផលិតផល <span>*</span></label>
+              <select id="orderProduct" class="form-select" required>
+                <option value="ក្រូចតែជ្រក់">ក្រូចតែជ្រក់ (4,000 ៛ / 1kg)</option>
+                <option value="ក្រូចថ្លុង">ក្រូចថ្លុង (5,000 ៛ / 1ផ្លែ)</option>
+                <option value="ទាំងពីរមុខ (ក្រូចតែជ្រក់ និង ក្រូចថ្លុង)">ទាំងពីរមុខ (ក្រូចតែជ្រក់ 1kg + ក្រូចថ្លុង 1ផ្លែ = 9,000 ៛)</option>
+              </select>
+            </div>
+
+            <!-- ចំនួន * & ឯកតា -->
+            <div class="form-group">
+              <div style="display: flex; gap: 10px;">
+                <div style="flex: 2;">
+                  <label for="orderQuantity" class="form-label">ចំនួន <span>*</span></label>
+                  <select id="orderQuantity" class="form-select">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                  </select>
+                </div>
+                <div style="flex: 1.5;">
+                  <label for="orderUnit" class="form-label">ឯកតា</label>
+                  <select id="orderUnit" class="form-select">
+                    <option value="kg">kg (គីឡូ)</option>
+                    <option value="ផ្លែ">ផ្លែ</option>
+                    <option value="ឈុត">ឈុត</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <!-- អាសយដ្ឋាន * -->
+            <div class="form-group full-width">
+              <label for="orderAddress" class="form-label">អាសយដ្ឋាន <span>*</span></label>
+              <input type="text" id="orderAddress" class="form-input" placeholder="ផ្ទះលេខ, ផ្លូវ, សង្កាត់/ឃុំ, ខណ្ឌ/ស្រុក, រាជធានី/ខេត្ត" required>
+            </div>
+
+            <!-- ចំណាំ -->
+            <div class="form-group full-width">
+              <label for="orderNote" class="form-label">ចំណាំ</label>
+              <textarea id="orderNote" class="form-textarea" placeholder="បញ្ជាក់ម៉ោងដឹកជញ្ជូន ឬចំណាំបន្ថែម..."></textarea>
+            </div>
+
+            <!-- Live Calculation Preview Card -->
+            <div class="order-price-summary-card" id="orderSummaryBox">
+              <div>
+                <div class="summary-label">
+                  <span>💰 តម្លៃសរុបគណនាជាក់ស្តែង:</span>
+                </div>
+                <div class="summary-subtext" id="orderCalculatedSubtext">ក្រូចតែជ្រក់ 1 kg × 4,000 ៛ (~$1.00)</div>
+              </div>
+              <div class="summary-price" id="orderCalculatedPrice">4,000 ៛</div>
+            </div>
+
+            <!-- Submit Buttons -->
+            <div class="order-btn-wrap">
+              <button type="submit" class="btn-order-submit">
+                <span>🛒</span>
+                <span>បញ្ជាទិញ</span>
+              </button>
+              <button type="button" class="btn-telegram-order" id="btnTelegramDirect">
+                <span>✈️</span>
+                <span>បញ្ជាទិញតាម Telegram (096 350 8320)</span>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       8. FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Left: Brand & Info -->
+        <div>
+          <div class="footer-brand-title">
+            <span>🍊</span>
+            <span>ក្រូចស្រុកយើង</span>
+          </div>
+          <p class="footer-brand-desc">
+            ហាងលក់ផ្លែឈើស្រស់ធម្មជាតិពីចម្ការ ក្រូចតែជ្រក់ និង ក្រូចថ្លុង គុណភាពខ្ពស់ បេះថ្មីៗពីដើម ផ្អែមឆ្ងាញ់ធម្មជាតិ ដឹកជញ្ជូនដល់គេហដ្ឋានរបស់អ្នក។
+          </p>
+          <div class="footer-socials">
+            <a href="https://t.me/+855963508320" target="_blank" class="social-circle-btn" title="Telegram">✈️</a>
+            <a href="tel:0963508320" class="social-circle-btn" title="Call">📞</a>
+            <a href="#" class="social-circle-btn" title="Facebook">🌐</a>
+            <a href="#" class="social-circle-btn" title="TikTok">🎵</a>
+          </div>
+        </div>
+
+        <!-- Middle: Links -->
+        <div>
+          <h4 class="footer-heading">តំណភ្ជាប់រហ័ស</h4>
+          <ul class="footer-links">
+            <li><a href="#home">ទំព័រដើម</a></li>
+            <li><a href="#products">ផលិតផល</a></li>
+            <li><a href="#about">អំពីយើង</a></li>
+            <li><a href="#order">ទំនាក់ទំនង</a></li>
+          </ul>
+        </div>
+
+        <!-- Right: Contact -->
+        <div>
+          <h4 class="footer-heading">ទំនាក់ទំនង</h4>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <span class="footer-contact-icon">📞</span>
+              <span>លេខទូរស័ព្ទ៖ <a href="tel:0963508320" style="color: #fff; font-weight: bold;">096 350 8320</a></span>
+            </li>
+            <li class="footer-contact-item">
+              <span class="footer-contact-icon">✈️</span>
+              <span>Telegram៖ <a href="https://t.me/+855963508320" target="_blank" style="color: #fff; font-weight: bold;">096 350 8320</a></span>
+            </li>
+            <li class="footer-contact-item">
+              <span class="footer-contact-icon">📍</span>
+              <span>ទីតាំងចម្ការ៖ <a href="https://maps.app.goo.gl/CKua7u4Khgq8hTqt7" target="_blank" style="color: #fff; text-decoration: underline; font-weight: 700;">មើលលើ Google Maps 🗺️</a></span>
+            </li>
+            <li class="footer-contact-item">
+              <span class="footer-contact-icon">⏰</span>
+              <span>ម៉ោងបម្រើការ៖ 7:00 ព្រឹក - 8:00 យប់</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Copyright -->
+      <div class="footer-bottom">
+        <p>© 2026 ក្រូចស្រុកយើង. រក្សាសិទ្ធិគ្រប់យ៉ាង។ (ក្រូចតែជ្រក់ & ក្រូចថ្លុង)</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODALS & NOTIFICATIONS
+       ========================================================================== -->
+  <!-- Order Confirmation Modal -->
+  <div class="order-modal-backdrop" id="orderModal">
+    <div class="order-modal">
+      <div class="modal-success-icon">✓</div>
+      <h3 class="modal-title">ការបញ្ជាទិញបានជោគជ័យ!</h3>
+      <p class="modal-desc">
+        អរគុណសម្រាប់ការគាំទ្រផ្លែឈើស្រស់ពី <strong>ក្រូចស្រុកយើង</strong>។ យើងខ្ញុំនឹងទាក់ទងបញ្ជាក់ការដឹកជញ្ជូនក្នុងពេលឆាប់ៗនេះ។
+      </p>
+      
+      <div class="modal-order-summary">
+        <div class="modal-summary-row">
+          <span>អតិថិជន:</span>
+          <strong id="modalCustomerName">-</strong>
+        </div>
+        <div class="modal-summary-row">
+          <span>លេខទូរស័ព្ទ:</span>
+          <strong id="modalPhone">-</strong>
+        </div>
+        <div class="modal-summary-row">
+          <span>ផលិតផល:</span>
+          <strong id="modalProduct">-</strong>
+        </div>
+        <div class="modal-summary-row">
+          <span>ទីតាំងដឹកជញ្ជូន:</span>
+          <span id="modalAddress">-</span>
+        </div>
+        <div class="modal-summary-row total">
+          <span>សរុបប្រមាណ:</span>
+          <span id="modalTotal">0 ៛</span>
+        </div>
+      </div>
+
+      <div class="modal-actions">
+        <button type="button" class="btn-modal-close" onclick="closeModal()">បិទ</button>
+        <button type="button" class="btn-modal-telegram" id="btnModalTelegram">
+          <span>✈️ ផ្ញើតាម Telegram</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MOBILE APP-LIKE BOTTOM BAR & CART BOTTOM SHEET
+       ========================================================================== -->
+  <!-- Mobile Bottom Navigation Bar -->
+  <nav class="mobile-bottom-bar" id="mobileBottomBar">
+    <a href="#home" class="bottom-bar-item active">
+      <span class="bottom-bar-icon">🏠</span>
+      <span class="bottom-bar-label">ទំព័រដើម</span>
+    </a>
+    <a href="#products" class="bottom-bar-item">
+      <span class="bottom-bar-icon">🍊</span>
+      <span class="bottom-bar-label">ផលិតផល</span>
+    </a>
+    <button type="button" class="bottom-bar-item" id="mobileCartTrigger">
+      <div class="bottom-bar-icon-wrap">
+        <span class="bottom-bar-icon">🛒</span>
+        <span class="cart-badge bottom-cart-badge" id="bottomCartBadge">0</span>
+      </div>
+      <span class="bottom-bar-label">កន្ត្រក</span>
+    </button>
+    <a href="https://t.me/+855963508320" target="_blank" class="bottom-bar-item telegram-item">
+      <span class="bottom-bar-icon">✈️</span>
+      <span class="bottom-bar-label">Telegram</span>
+    </a>
+    <a href="tel:0963508320" class="bottom-bar-item phone-item">
+      <span class="bottom-bar-icon">📞</span>
+      <span class="bottom-bar-label">ខលភ្លាមៗ</span>
+    </a>
+  </nav>
+
+  <!-- Mobile Cart Bottom Sheet Drawer -->
+  <div class="mobile-cart-backdrop" id="mobileCartBackdrop"></div>
+  <aside class="mobile-cart-sheet" id="mobileCartSheet" aria-label="កន្ត្រកទំនិញលើទូរស័ព្ទ">
+    <div class="sheet-drag-handle" id="sheetDragHandle"></div>
+    <div class="sheet-header">
+      <div class="sheet-header-title">
+        <span>🛒</span> កន្ត្រកទំនិញ (<span id="mobileCartCountHeader">0</span>)
+      </div>
+      <button type="button" class="sheet-close-btn" id="closeMobileCartBtn" aria-label="បិទ">✕</button>
+    </div>
+    <div class="sheet-body" id="mobileCartItemsList">
+      <!-- Populated dynamically by app.js -->
+    </div>
+    <div class="sheet-footer">
+      <div class="sheet-total-row">
+        <span class="cart-total-label">សរុបទាំងអស់:</span>
+        <div style="text-align: right;">
+          <span class="cart-total-value" id="mobileCartTotalValue">0 ៛</span>
+          <div class="cart-total-riel" id="mobileCartTotalRiel" style="margin-bottom: 0;">($0.00)</div>
+        </div>
+      </div>
+      <button type="button" class="btn-checkout-cart" id="btnMobileCheckoutCart" style="margin-top: 12px;">
+        <span>🛒 បន្តទៅបញ្ជាទិញ</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- Floating Mobile Quick Contacts -->
+  <div class="mobile-floating-actions">
+    <a href="https://t.me/+855963508320" target="_blank" class="mobile-fab telegram" title="ផ្ញើសារតាម Telegram">
+      <span>✈️</span>
+    </a>
+    <a href="tel:0963508320" class="mobile-fab call" title="ទូរស័ព្ទកុម្ម៉ង់">
+      <span>📞</span>
+    </a>
+  </div>
+
+  <!-- Price Editor Trigger for Store Owner -->
+  <button type="button" class="price-edit-trigger" id="priceEditTrigger" title="កែប្រែតម្លៃផលិតផល">
+    <span>⚙️</span>
+    <span>កែប្រែតម្លៃ</span>
+  </button>
+
+  <!-- Price Editor Modal -->
+  <div class="order-modal-backdrop" id="priceEditModal">
+    <div class="order-modal price-edit-modal">
+      <h3 class="modal-title" style="font-size: 22px; margin-bottom: 16px;">⚙️ កែប្រែតម្លៃផលិតផល</h3>
+      <div class="price-input-row">
+        <label class="form-label">🍊 ក្រូចតែជ្រក់ (៛ / 1kg)</label>
+        <input type="number" step="500" id="inputPriceOrange" class="form-input" value="4000">
+      </div>
+      <div class="price-input-row">
+        <label class="form-label">🍈 ក្រូចថ្លុង (៛ / 1ផ្លែ)</label>
+        <input type="number" step="500" id="inputPricePomelo" class="form-input" value="5000">
+      </div>
+      <div class="modal-actions" style="margin-top: 20px;">
+        <button type="button" class="btn-modal-close" id="closePriceModal" style="background: #999;">បោះបង់</button>
+        <button type="button" class="btn-modal-close" id="savePriceBtn" style="background: var(--primary-orange);">រក្សាទុក</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Alert -->
+  <div class="toast-alert" id="toastAlert"></div>
+
+  <!-- Script -->
+  <script src="app.js"></script>
+</body>
+</html>
